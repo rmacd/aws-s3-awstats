@@ -1,8 +1,12 @@
 # AWS S3 to AWStats processor
 
-**NOTE** this assumes you are using a single bucket for your logs, separate from the data bucket(s) you are logging access to.
+**What is it?**
 
-You can use a 'prefix' (set up via your bucket configuration) to process logs separately but allow them to be written to a single bucket.
+Takes your AWS S3 logs, collates them, and then serves them via AWStats. Includes support for GeoIP (Cities / Countries) via GeoLite2.
+
+> **NOTE** this assumes you are using a single bucket for your logs, separate from the data bucket(s) you are logging access to.
+>
+> You can use a 'prefix' (set up via your bucket configuration) to process logs separately but allow them to be written to a single bucket.
 
 ## Getting started
 
